@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { PageOne, PageTwo } from "./Components/Page";
+import { PageOne, PageTwo } from "./Pages";
 
 function App2() {
   return (
