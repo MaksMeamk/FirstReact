@@ -5,6 +5,7 @@ import Events from "./Events";
 import Clock from "./Clock";
 import List from "./List";
 import { useState } from "react";
+import Ref from "./Ref";
 // import tick from "./tick";
 
 const App2 = () => {
@@ -28,6 +29,7 @@ const App2 = () => {
 
       {visible && <List></List>}
       <button onClick={toggleVisible}>Показать/Скрыть</button>
+      <Ref></Ref>
     </>
   );
 };
