@@ -3,9 +3,14 @@ import { PageOne, PageTwo } from "./Pages";
 import MainPage from "./MainPage";
 import Events from "./Events";
 import Clock from "./Clock";
+import List from "./List";
+import { useState } from "react";
 // import tick from "./tick";
 
 const App2 = () => {
+  const [visible, setVisible] = useState(true);
+  const toggleVisible = () => { setVisible(visible => !visible) }
+
   return (
     <>
       {/* {setInterval(tick, 1000)} */}
@@ -20,6 +25,9 @@ const App2 = () => {
           </Route>
         </Routes>
       </BrowserRouter>
+
+      {visible && <List></List>}
+      <button onClick={toggleVisible}>Показать/Скрыть</button>
     </>
   );
 };
