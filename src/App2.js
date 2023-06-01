@@ -6,11 +6,15 @@ import Clock from "./Clock";
 import List from "./List";
 import { useState } from "react";
 import Ref from "./Ref";
+import Ref2 from "./Ref2";
 // import tick from "./tick";
 
 const App2 = () => {
   const [visible, setVisible] = useState(true);
-  const toggleVisible = () => { setVisible(visible => !visible) }
+  const toggleVisible = () => {
+    setVisible((visible) => !visible);
+  };
+  const ulElem = document.querySelector('ul');
 
   return (
     <>
@@ -30,6 +34,7 @@ const App2 = () => {
       {visible && <List></List>}
       <button onClick={toggleVisible}>Показать/Скрыть</button>
       <Ref></Ref>
+      <Ref2 />
     </>
   );
 };
