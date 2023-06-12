@@ -4,11 +4,18 @@ import "./index.css";
 //import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import App2 from "./App2";
+import Ref2 from "./Ref2";
+import Ref3 from "./Ref3";
+import Memo from "./Memo";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
-  <App2 />
+  //<App2 />
+  //<Ref3 />
+  <Memo />
+
+
   // </React.StrictMode>
 );
 
